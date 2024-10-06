@@ -1,0 +1,32 @@
+.defecto {
+    display: flex;
+    flex-direction: row;
+}
+
+.defecto img {
+    width: 30rem;
+
+    margin: 2rem;
+
+    border-radius: 10px;
+}
+
+.cert {
+    display: flex;
+
+    justify-content: center;
+}
+
+.img-cert {
+    width: 20rem;
+    margin: 4rem 0 4rem 0;    
+    
+    border-radius: 10px;
+}
+
+.img-cert:hover {
+    transform: scale(2);
+    transition: 0.4s;
+
+    margin: 8rem 0 8rem 0;
+}

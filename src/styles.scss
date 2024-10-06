@@ -1,0 +1,149 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;1,200;1,300&display=swap');
+@import "primeng/resources/themes/lara-light-blue/theme.css";
+@import "primeng/resources/primeng.css";
+
+body {
+    font-family: Poppins;
+}
+
+a {
+    text-decoration: none;
+    color: gray;
+}
+
+.body-color {
+    color: lightgray !important;
+}
+
+.bodycontent {
+    background-image: url(/images/fondo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bodycontentlamina {
+    background-image: url(/images/fondo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.container1 {
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.705), rgba(255, 255, 255, 0.705), rgba(128, 128, 128, 0));
+    padding-left: 5rem;
+    
+}
+
+
+
+.container1 img {
+    max-height: 6rem;
+    margin: auto;
+    max-width: 7rem;
+    padding: 1rem;
+}
+.inline {
+    display: flex;
+}
+
+p {
+    font-size: large;
+    margin-bottom: 0.5rem;
+}
+
+.pb-6 {
+    padding-bottom: 0.1rem;
+    margin: 0rem;
+}
+
+.html {
+    width: 100%;
+}
+.header {
+    display: inline-block;
+}
+
+.headerimg img {
+    max-width: 14rem;
+    margin: 1rem;
+}
+
+.headermedia a, .headermedia bi {
+    height: 1.5rem;
+    width: 1.5rem;
+    padding: 0.2rem !important;
+    color: currentColor;
+}
+
+.carousel-item img {
+    max-height: 20rem !important;
+    object-fit:cover;
+}
+/* .container-fluid {
+    padding: 0px !important;
+} */
+
+.nav-link {
+    color: black !important;;
+}
+
+#servicios {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+#servicios col {
+    max-width: 25%;
+}
+
+#servicios img {
+    max-width: 20rem;
+    border-radius: 15px;
+}
+
+#servicios a {
+    text-decoration: none;
+    color: black;
+} 
+
+#servicios div img:hover {
+    transform: scale(1.03);
+    transition: transform .2s;
+}
+
+@media screen and (max-width: 600px) {
+    .headerimg img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 8rem;
+
+    }
+    .hederimg {
+        max-width: 100%;
+        margin: auto;
+    }
+    #carruselinicio img {
+        max-height: 5rem;
+        overflow: hidden;
+        object-fit: cover;
+    }
+    #carruselinicio {
+        max-height: 14rem;
+        overflow: hidden;
+        object-fit: cover;
+    }
+    .container1 {
+        padding-left: 1rem;
+    }
+    .container1 h3 {
+        padding-top: 1rem;
+    }
+    .laminaimg {
+        display: none;
+    }
+}
+/* Importing Bootstrap SCSS file. */
+@import 'bootstrap/scss/bootstrap';
+
+/* Importing Bootstrap SCSS file. */
+@import 'bootstrap/scss/bootstrap';

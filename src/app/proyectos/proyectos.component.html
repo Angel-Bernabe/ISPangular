@@ -1,0 +1,168 @@
+<div id="proyectos" class="container-flex">
+  <div class="container">
+    <h1>¡Nuestros proyectos!</h1>
+    <h4>Hecha un vistado a nuestros proyectos</h4>
+  </div>
+  <div class="container-flex cuboproyecto px-5">
+    <div id="servicio" class="row">
+      <div
+        class="proyecto col-12 col-md-6 col-lg-4"
+        (click)="showSonLlatzer = true"
+      >
+        <img src="images/son_llatzer/sonllatzer1.JPG" alt="" />
+        <p>Hospital Son Llatzer</p>
+      </div>
+      <div
+        class="proyecto col-12 col-md-6 col-lg-4"
+        (click)="showSixSenses = true"
+      >
+        <img src="images/six_senses/sixsenses1.jpg" alt="" />
+        <p>Six Senses Ibiza</p>
+      </div>
+      <div
+        class="proyecto col-12 col-md-6 col-lg-4"
+        (click)="showOceanDrive = true"
+      >
+        <img src="images/arquitectura.webp" alt="" />
+        <p>Ocean Drive</p>
+      </div>
+      <div
+        class="proyecto col-12 col-md-6 col-lg-4"
+        (click)="showSesEstaques = true"
+      >
+        <img src="images/ses_estaques/sesestaques1.jpg" alt="" />
+        <p>Ses Estaques</p>
+      </div>
+      <div
+        class="proyecto col-12 col-md-6 col-lg-4"
+        (click)="showJuanedaMuro = true"
+      >
+        <img src="images/juaneda_muro/arquitectura.jpg" alt="" />
+        <p>Hospital Juaneda Muro</p>
+      </div>
+      <div
+        class="proyecto col-12 col-md-6 col-lg-4"
+        (click)="showJuanedaCorporativo = true"
+      >
+        <img src="images/arquitectura.webp" alt="" />
+        <p>Oficinas Juaneda Corporativo</p>
+      </div>
+    </div>
+    <div class="carruseles">
+      <p-galleria
+        [value]="imagesSonLlatzer"
+        [(visible)]="showSonLlatzer"
+        [responsiveOptions]="responsiveOptions"
+        [containerStyle]="{ 'max-width': '50%' }"
+        [numVisible]="9"
+        [circular]="true"
+        [fullScreen]="true"
+        [showItemNavigators]="true"
+      >
+        <ng-template pTemplate="item" let-item>
+          <img [src]="item.itemImageSrc" style="width: 100%; display: block" />
+        </ng-template>
+        <ng-template pTemplate="thumbnail" let-item>
+          <div class="grid grid-nogutter justify-content-center">
+            <img [src]="item.thumbnailImageSrc" style="display: block" />
+          </div>
+        </ng-template>
+      </p-galleria>
+      <p-galleria
+        [value]="imagesSixSenses"
+        [(visible)]="showSixSenses"
+        [responsiveOptions]="responsiveOptions"
+        [containerStyle]="{ 'max-width': '50%' }"
+        [numVisible]="9"
+        [circular]="true"
+        [fullScreen]="true"
+        [showItemNavigators]="true"
+      >
+        <ng-template pTemplate="item" let-item>
+          <img [src]="item.itemImageSrc" style="width: 100%; display: block" />
+        </ng-template>
+        <ng-template pTemplate="thumbnail" let-item>
+          <div class="grid grid-nogutter justify-content-center">
+            <img [src]="item.thumbnailImageSrc" style="display: block" />
+          </div>
+        </ng-template>
+      </p-galleria>
+      <p-galleria
+        [value]="imagesOceanDrive"
+        [(visible)]="showOceanDrive"
+        [responsiveOptions]="responsiveOptions"
+        [containerStyle]="{ 'max-width': '50%' }"
+        [numVisible]="9"
+        [circular]="true"
+        [fullScreen]="true"
+        [showItemNavigators]="true"
+      >
+        <ng-template pTemplate="item" let-item>
+          <img [src]="item.itemImageSrc" style="width: 100%; display: block" />
+        </ng-template>
+        <ng-template pTemplate="thumbnail" let-item>
+          <div class="grid grid-nogutter justify-content-center">
+            <img [src]="item.thumbnailImageSrc" style="display: block" />
+          </div>
+        </ng-template>
+      </p-galleria>
+      <p-galleria
+        [value]="imagesSesEstaques"
+        [(visible)]="showSesEstaques"
+        [responsiveOptions]="responsiveOptions"
+        [containerStyle]="{ 'max-width': '50%' }"
+        [numVisible]="9"
+        [circular]="true"
+        [fullScreen]="true"
+        [showItemNavigators]="true"
+      >
+        <ng-template pTemplate="item" let-item>
+          <img [src]="item.itemImageSrc" style="width: 100%; display: block" />
+        </ng-template>
+        <ng-template pTemplate="thumbnail" let-item>
+          <div class="grid grid-nogutter justify-content-center">
+            <img [src]="item.thumbnailImageSrc" style="display: block" />
+          </div>
+        </ng-template>
+      </p-galleria>
+      <p-galleria
+        [value]="imagesJuanedaMuro"
+        [(visible)]="showJuanedaMuro"
+        [responsiveOptions]="responsiveOptions"
+        [containerStyle]="{ 'max-width': '50%' }"
+        [numVisible]="9"
+        [circular]="true"
+        [fullScreen]="true"
+        [showItemNavigators]="true"
+      >
+        <ng-template pTemplate="item" let-item>
+          <img [src]="item.itemImageSrc" style="width: 100%; display: block" />
+        </ng-template>
+        <ng-template pTemplate="thumbnail" let-item>
+          <div class="grid grid-nogutter justify-content-center">
+            <img [src]="item.thumbnailImageSrc" style="display: block" />
+          </div>
+        </ng-template>
+      </p-galleria>
+      <p-galleria
+        [value]="imagesJuanedaCorporativo"
+        [(visible)]="showJuanedaCorporativo"
+        [responsiveOptions]="responsiveOptions"
+        [containerStyle]="{ 'max-width': '50%' }"
+        [numVisible]="9"
+        [circular]="true"
+        [fullScreen]="true"
+        [showItemNavigators]="true"
+      >
+        <ng-template pTemplate="item" let-item>
+          <img [src]="item.itemImageSrc" style="width: 100%; display: block" />
+        </ng-template>
+        <ng-template pTemplate="thumbnail" let-item>
+          <div class="grid grid-nogutter justify-content-center">
+            <img [src]="item.thumbnailImageSrc" style="display: block" />
+          </div>
+        </ng-template>
+      </p-galleria>
+    </div>
+  </div>
+</div>

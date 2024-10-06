@@ -1,0 +1,34 @@
+.container-flex {
+    text-align: center;
+    background-image: linear-gradient(to bottom, rgb(255, 255, 255), rgba(var(--bs-tertiary-bg-rgb)));
+}
+.proyecto img {
+    max-width: 15rem;
+    border-radius: 10px;
+}
+.container {
+    padding-top: 2rem;
+}
+.proyecto {
+    text-align: center;
+    padding-top: 2rem;
+}
+#servicio div:hover {
+    transform: scale(1.03);
+    transition: 0.2s;
+}
+
+#servicio img {
+    width: 15rem;
+    height: 15rem;
+    object-fit: cover;
+}
+
+.picsum-img-wrapper img {
+    width: 100%;
+}
+
+p-galleria > .p-component div {
+    border: 5px solid red !important;
+    border-radius: 10px !important;
+}

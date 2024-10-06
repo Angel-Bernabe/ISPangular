@@ -1,0 +1,88 @@
+<header>
+  <div class="container-fluid d-flex align-items-center headerimg">
+    <img 
+      routerLink="/home"routerLinkActive="active" ariaCurrentWhenActive="page" (click)="closeDropdown()" 
+      src="images/cropped-LOGOS-ISP-.png" alt="Logo empresa"
+    />
+    <div class="container-fluid d-flex justify-content-end headermedia">
+      <a href="mailto:info@ispcontrolsolar.com"><bi name="Envelope" class="bi"></bi></a>
+      <a href="//instagram.com/ispcontrolsolar" target="_blank"><bi name="Instagram" class="biStyles"></bi></a>
+      <a href=""><bi name="Whatsapp"></bi></a>
+    </div>
+  </div>
+  <nav class="navbar navbar-expand-lg sticky-top py-1">
+    <div class="container-fluid navegacion px-0">
+      <button class="navbar-toggler" type="button" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" (click)="isCollapsed = !isCollapsed">
+        <span class="navbar-toggler-icon"></span>
+      </button>     
+      <div [ngbCollapse]="isCollapsed" class="bg-body-tertiary collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li (click)="isCollapsed = !isCollapsed" class="nav-item px-3">
+            <a class="nav-link" routerLink="/home" routerLinkActive="active" ariaCurrentWhenActive="page" (click)="closeDropdown()">
+              Inicio
+            </a>
+          </li>
+          <li class="nav-item dropdown px-2">
+            <a
+              class="nav-link dropdown-toggle"
+              id="dropdownMenuButton"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+              (click)="toggleDropdown()"
+            >
+              Laminas para edificios
+            </a>
+            <ul class="dropdown-menu" [class.show]="showDropdown" aria-labelledby="dropdownMenuButton">
+              <li (click)="isCollapsed = !isCollapsed">
+                <a class="dropdown-item" routerLink="/edificios/proteccionSolar" routerLinkActive="active" ariaCurrentWhenActive="page" (click)="closeDropdown()">
+                  Laminas de proteccion solar
+                </a>
+              </li>
+              <li (click)="isCollapsed = !isCollapsed">
+                <a class="dropdown-item" routerLink="/edificios/claraboyas" routerLinkActive="active" ariaCurrentWhenActive="page" (click)="closeDropdown()">
+                  Laminas para claraboyas
+                </a>
+              </li>
+              <li (click)="isCollapsed = !isCollapsed">
+                <a class="dropdown-item" routerLink="/edificios/proteccionUV" routerLinkActive="active" ariaCurrentWhenActive="page" (click)="closeDropdown()">
+                  Laminas de proteccion UV
+                </a>
+              </li>
+              <li (click)="isCollapsed = !isCollapsed">
+                <a class="dropdown-item" routerLink="/edificios/antivandalica" routerLinkActive="active" ariaCurrentWhenActive="page" (click)="closeDropdown()">
+                  Laminas de seguridad/antivandalica
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li (click)="isCollapsed = !isCollapsed" class="nav-item px-2">
+            <a class="nav-link" routerLink="/automocion" routerLinkActive="active" ariaCurrentWhenActive="page" (click)="closeDropdown()">
+              Laminas para automocion
+            </a>
+          </li>
+          <li (click)="isCollapsed = !isCollapsed" class="nav-item px-2">
+            <a class="nav-link" routerLink="/nautica" routerLinkActive="active" ariaCurrentWhenActive="page" (click)="closeDropdown()">
+              Laminas para nautica
+            </a>
+          </li>
+          <li (click)="isCollapsed = !isCollapsed" class="nav-item px-2">
+            <a class="nav-link" routerLink="/pulido" routerLinkActive="active" ariaCurrentWhenActive="page" (click)="closeDropdown()">
+              Pulido de cristales
+            </a>
+          </li>
+          <li (click)="isCollapsed = !isCollapsed" class="nav-item px-2">
+            <a class="nav-link" routerLink="/proyectos" routerLinkActive="active" ariaCurrentWhenActive="page" (click)="closeDropdown()">
+              Proyectos realizados
+            </a>
+          </li>
+          <li (click)="isCollapsed = !isCollapsed" class="nav-item px-2">
+            <a class="nav-link" routerLink="/contacto" routerLinkActive="active" ariaCurrentWhenActive="page" (click)="closeDropdown()">
+              Contacto
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>

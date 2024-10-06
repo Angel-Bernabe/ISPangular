@@ -1,0 +1,38 @@
+a {
+    text-decoration: none;
+    color: black;
+}
+
+#contacto {
+  background-image: linear-gradient(to bottom, rgb(255, 255, 255), rgba(var(--bs-tertiary-bg-rgb)));
+}
+
+.exito {
+  background-color: rgba(0, 255, 21, 0.699);
+  display: flex;
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center; /* Centra verticalmente */
+  height: 2rem;
+  border-radius: 10px;
+}
+
+.error {
+  background-color: rgba(255, 0, 0, 0.418);
+  text-align: center;
+  justify-content: center;
+  height: 2rem;
+  border-radius: 10px;
+}
+
+.eventoex {
+    display: none;
+}
+.eventoer {
+    display: none;
+}
+
+@media screen and (max-width: 991px) {
+  #img-contacto {
+    display: none;
+  }
+}
