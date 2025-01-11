@@ -1,0 +1,14 @@
+{
+  "routes": [
+    "/automocion",
+    "/contacto",
+    "/edificios/antivandalica",
+    "/edificios/claraboyas",
+    "/edificios/proteccionSolar",
+    "/edificios/proteccionUV",
+    "/home",
+    "/nautica",
+    "/proyectos",
+    "/pulido"
+  ]
+}
