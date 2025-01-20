@@ -112,6 +112,19 @@ p {
     transition: transform .2s;
 }
 
+.claraboyaimg {
+    max-width: 40rem !important;
+    max-height: 30rem;
+    object-fit: cover !important;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.img-fluid {
+    border-radius: 20px;
+    
+}
+
 @media screen and (max-width: 600px) {
     .headerimg img {
         display: block;
@@ -142,6 +155,9 @@ p {
     }
     .laminaimg {
         display: none;
+    }
+    .claraboyaimg {
+        max-width: 100%;
     }
 }
 /* Importing Bootstrap SCSS file. */
