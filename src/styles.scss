@@ -98,7 +98,7 @@ p {
 #servicios img {
     width: 20rem;
     height: 15rem;
-    
+    object-fit: cover;
     border-radius: 15px;
 }
 
@@ -147,6 +147,7 @@ p {
         overflow: hidden;
         object-fit: cover;
     }
+  
     .container1 {
         padding-left: 1rem;
     }
@@ -156,8 +157,11 @@ p {
     .laminaimg {
         display: none;
     }
-    .claraboyaimg {
-        max-width: 100%;
+    .solar section {
+        display: flex;
+    }
+    .img-fluid {
+        width: 100%;
     }
 }
 /* Importing Bootstrap SCSS file. */
