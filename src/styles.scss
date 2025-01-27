@@ -124,6 +124,10 @@ p {
     width: 50%;
 }
 
+.anti div {
+    width: 33%;
+}
+
 .img-fluid {
     border-radius: 20px;
     
@@ -152,6 +156,9 @@ p {
         object-fit: cover;
     }
     .solar section {
+        width: 100%;
+    }
+    .anti div {
         width: 100%;
     }
   
