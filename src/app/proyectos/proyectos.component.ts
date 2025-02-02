@@ -7,14 +7,20 @@ import { SixSenses } from '../../service/sixSenses';
 import { OceanDrive } from '../../service/oceanDrive';
 import { SesEstaques } from '../../service/sesEstaques';
 import { JuanedaMuro } from '../../service/juanedaMuro';
-import { JuanedaCorporativo } from '../../service/juanedaCorporativo';
+import { oficinasEnergema } from '../../service/OficinasEnergema';
+import { odGroup } from '../../service/odGroup';
+import { oficinaOracle } from '../../service/oficinaOracle';
+import { villas } from '../../service/villas';
+import { sonVida } from '../../service/sonVida';
+import { oficinasMascaro } from '../../service/oficinasMascaro';
+import { oficinasSampol } from '../../service/oficinasSampol';
 import { Meta, Title } from '@angular/platform-browser'
 
 @Component({
   selector: 'app-proyectos',
   standalone: true,
   imports: [NgbCarouselModule, GalleriaModule, ButtonModule],
-  providers: [JuanedaMuro, JuanedaCorporativo, SonLlatzer, SixSenses, OceanDrive, SesEstaques],
+  providers: [JuanedaMuro, oficinasEnergema, SonLlatzer, SixSenses, OceanDrive, SesEstaques, odGroup, oficinaOracle, villas, sonVida, oficinasSampol, oficinasMascaro],
   templateUrl: './proyectos.component.html',
   styleUrl: './proyectos.component.scss'
 })
@@ -24,14 +30,26 @@ export class ProyectosComponent implements OnInit {
   showOceanDrive:boolean = false;
   showSesEstaques:boolean = false;
   showJuanedaMuro:boolean = false;
-  showJuanedaCorporativo:boolean = false;
+  showOficinaEnergema:boolean = false;
+  showOdGroup:boolean = false;
+  showOficinaOracle:boolean = false;
+  showVillas:boolean = false;
+  showSonvida:boolean = false;
+  showOficinaSampol:boolean = false;
+  showOficinaMascaro:boolean = false;
 
   imagesSonLlatzer: any[] | undefined;
   imagesSixSenses: any[] | undefined;
   imagesOceanDrive: any[] | undefined;
   imagesSesEstaques: any[] | undefined;
   imagesJuanedaMuro: any[] | undefined;
-  imagesJuanedaCorporativo: any[] | undefined;
+  imagesOficinaEnergema: any[] | undefined;
+  imagesOdGroup: any[] | undefined;
+  imagesOficinaOracle: any[] | undefined;
+  imagesVillas: any[] | undefined;
+  imagesSonvida: any[] | undefined;
+  imagesOficinaSampol: any[] | undefined;
+  imagesOficinaMascaro: any[] | undefined;
 
   responsiveOptions: any[] = [
       {
@@ -58,7 +76,13 @@ export class ProyectosComponent implements OnInit {
     private oceanDrive: OceanDrive,
     private sesEstaques: SesEstaques,
     private juanedaMuro: JuanedaMuro,
-    private juanedaCorporativo: JuanedaCorporativo,
+    private oficinasEnergema: oficinasEnergema,
+    private oficinaOracle: oficinaOracle,
+    private Villas: villas,
+    private SonVida: sonVida,
+    private oficinaSampol: oficinasSampol,
+    private oficinaMascaro: oficinasMascaro,
+    private odGroup: odGroup,
     
     private titleService: Title, 
     private metaService: Meta
@@ -74,7 +98,14 @@ export class ProyectosComponent implements OnInit {
     this.oceanDrive.getImages().then((images) => (this.imagesOceanDrive = images));
     this.sesEstaques.getImages().then((images) => (this.imagesSesEstaques = images));
     this.juanedaMuro.getImages().then((images) => (this.imagesJuanedaMuro = images));
-    this.juanedaCorporativo.getImages().then((images) => (this.imagesJuanedaCorporativo = images));
+    this.oficinasEnergema.getImages().then((images) => (this.imagesOficinaEnergema = images));
+    this.oficinaOracle.getImages().then((images) => (this.imagesOficinaOracle = images));
+    this.Villas.getImages().then((images) => (this.imagesVillas = images));
+    this.SonVida.getImages().then((images) => (this.imagesSonvida = images));
+    this.oficinaSampol.getImages().then((images) => (this.imagesOficinaSampol = images));
+    this.oficinaMascaro.getImages().then((images) => (this.imagesOficinaMascaro = images));
+    this.odGroup.getImages().then((images) => (this.imagesOdGroup = images));
+
   }
 
 }

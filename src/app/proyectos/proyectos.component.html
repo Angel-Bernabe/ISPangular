@@ -5,26 +5,22 @@
   </div>
   <div class="container-flex cuboproyecto px-5">
     <div id="servicio" class="row">
-      <div
-        class="proyecto col-12 col-md-6 col-lg-4"
-        (click)="showSonLlatzer = true"
-      >
-        <img src="images/son_llatzer/sonllatzer1.JPG" alt="" />
-        <p>Hospital Son Llatzer</p>
-      </div>
+      
       <div
         class="proyecto col-12 col-md-6 col-lg-4"
         (click)="showSixSenses = true"
       >
-        <img src="images/six_senses/sixsenses1.jpg" alt="" />
+        <img src="images/six_senses/portada.JPG" alt="" />
         <p>Six Senses Ibiza</p>
+        <p class="descripcionpr">Instalacion de lamina solar 3M prestige 40</p>
       </div>
       <div
         class="proyecto col-12 col-md-6 col-lg-4"
         (click)="showOceanDrive = true"
       >
-        <img src="images/arquitectura.webp" alt="" />
+        <img src="images/ocean_drive/DSC06799.jpg" alt="" />
         <p>Ocean Drive</p>
+        <p class="descripcionpr">Instalacion de lamina solar e-Lite 45 xtra</p>
       </div>
       <div
         class="proyecto col-12 col-md-6 col-lg-4"
@@ -32,6 +28,15 @@
       >
         <img src="images/ses_estaques/sesestaques1.jpg" alt="" />
         <p>Ses Estaques</p>
+        <p class="descripcionpr">Instalacion de lamina solar e-Lite 45 xtra</p>
+      </div>
+      <div
+        class="proyecto col-12 col-md-6 col-lg-4"
+        (click)="showSonLlatzer = true"
+      >
+        <img src="images/son_llatzer/sonllatzer1.JPG" alt="" />
+        <p>Hospital Son Llatzer</p>
+        <p class="descripcionpr">Instalacion de lamina solar Silver 20 XTRM</p>
       </div>
       <div
         class="proyecto col-12 col-md-6 col-lg-4"
@@ -39,13 +44,63 @@
       >
         <img src="images/juaneda_muro/arquitectura.jpg" alt="" />
         <p>Hospital Juaneda Muro</p>
+        <p class="descripcionpr">Instalacion de lamina solar Silver 20 XTRM</p>
       </div>
       <div
         class="proyecto col-12 col-md-6 col-lg-4"
-        (click)="showJuanedaCorporativo = true"
+        (click)="showOdGroup = true"
       >
-        <img src="images/arquitectura.webp" alt="" />
-        <p>Oficinas Juaneda Corporativo</p>
+        <img src="images/od_group/portada.jpg" alt="" />
+        <p>OD Group</p>
+        <p class="descripcionpr">Instalacion de lamina solar Silver 20 xtra</p>
+      </div>
+      <div
+        class="proyecto col-12 col-md-6 col-lg-4"
+        (click)="showSonvida = true"
+      >
+        <img src="images/son_llatzer/sonllatzer1.JPG" alt="" />
+        <p>Hotel castillo Son Vida</p>
+        <p class="descripcionpr">Instalacion de lamina solar 3M prestige 40</p>
+      </div>
+      <div
+        class="proyecto col-12 col-md-6 col-lg-4"
+        (click)="showOficinaOracle = true"
+      >
+        <img src="images/oracle/arquitecturamini.jpg" alt="" />
+        <p>Oficinas ORACLE</p>
+        <p class="descripcionpr">Instalacion de lamina solar Silver 20 xtra</p>
+      </div>
+      <div
+        class="proyecto col-12 col-md-6 col-lg-4"
+        (click)="showOficinaMascaro = true"
+      >
+        <img src="images/son_llatzer/sonllatzer1.JPG" alt="" />
+        <p>Mascaro</p>
+        <p class="descripcionpr">Instalacion de lamina solar Silver 20 xtra</p>
+      </div>
+      <div
+        class="proyecto col-12 col-md-6 col-lg-4"
+        (click)="showVillas = true"
+      >
+        <img src="images/villas/portadavilla.jpg" alt="" />
+        <p>Villas</p>
+        <p class="descripcionpr">Instalacion de lamina solar 3M prestige</p>
+      </div>
+      <div
+        class="proyecto col-12 col-md-6 col-lg-4"
+        (click)="showOficinaEnergema = true"
+      >
+        <img src="images/energema/IMG_0590.jpg" alt="" />
+        <p>Oficinas ENERGEMA</p>
+        <p class="descripcionpr">Instalacion de lamina solar Silver 20 xtra</p>
+      </div>
+      <div
+        class="proyecto col-12 col-md-6 col-lg-4"
+        (click)="showOficinaSampol = true"
+      >
+        <img src="images/sampol/portadasampol.jpg" alt="" />
+        <p>Oficinas SAMPOL</p>
+        <p class="descripcionpr">Instalacion de lamina solar Silver 20 xtra</p>
       </div>
     </div>
     <div class="carruseles">
@@ -145,8 +200,125 @@
         </ng-template>
       </p-galleria>
       <p-galleria
-        [value]="imagesJuanedaCorporativo"
-        [(visible)]="showJuanedaCorporativo"
+        [value]="imagesOficinaEnergema"
+        [(visible)]="showOficinaEnergema"
+        [responsiveOptions]="responsiveOptions"
+        [containerStyle]="{ 'max-width': '50%' }"
+        [numVisible]="9"
+        [circular]="true"
+        [fullScreen]="true"
+        [showItemNavigators]="true"
+      >
+        <ng-template pTemplate="item" let-item>
+          <img [src]="item.itemImageSrc" style="width: 100%; display: block" />
+        </ng-template>
+        <ng-template pTemplate="thumbnail" let-item>
+          <div class="grid grid-nogutter justify-content-center">
+            <img [src]="item.thumbnailImageSrc" style="display: block" />
+          </div>
+        </ng-template>
+      </p-galleria>
+      <p-galleria
+        [value]="imagesOdGroup"
+        [(visible)]="showOdGroup"
+        [responsiveOptions]="responsiveOptions"
+        [containerStyle]="{ 'max-width': '50%' }"
+        [numVisible]="9"
+        [circular]="true"
+        [fullScreen]="true"
+        [showItemNavigators]="true"
+      >
+        <ng-template pTemplate="item" let-item>
+          <img [src]="item.itemImageSrc" style="width: 100%; display: block" />
+        </ng-template>
+        <ng-template pTemplate="thumbnail" let-item>
+          <div class="grid grid-nogutter justify-content-center">
+            <img [src]="item.thumbnailImageSrc" style="display: block" />
+          </div>
+        </ng-template>
+      </p-galleria>
+
+      <p-galleria
+        [value]="imagesSonvida"
+        [(visible)]="showSonvida"
+        [responsiveOptions]="responsiveOptions"
+        [containerStyle]="{ 'max-width': '50%' }"
+        [numVisible]="9"
+        [circular]="true"
+        [fullScreen]="true"
+        [showItemNavigators]="true"
+      >
+        <ng-template pTemplate="item" let-item>
+          <img [src]="item.itemImageSrc" style="width: 100%; display: block" />
+        </ng-template>
+        <ng-template pTemplate="thumbnail" let-item>
+          <div class="grid grid-nogutter justify-content-center">
+            <img [src]="item.thumbnailImageSrc" style="display: block" />
+          </div>
+        </ng-template>
+      </p-galleria>
+
+      <p-galleria
+        [value]="imagesOficinaOracle"
+        [(visible)]="showOficinaOracle"
+        [responsiveOptions]="responsiveOptions"
+        [containerStyle]="{ 'max-width': '50%' }"
+        [numVisible]="9"
+        [circular]="true"
+        [fullScreen]="true"
+        [showItemNavigators]="true"
+      >
+        <ng-template pTemplate="item" let-item>
+          <img [src]="item.itemImageSrc" style="width: 100%; display: block" />
+        </ng-template>
+        <ng-template pTemplate="thumbnail" let-item>
+          <div class="grid grid-nogutter justify-content-center">
+            <img [src]="item.thumbnailImageSrc" style="display: block" />
+          </div>
+        </ng-template>
+      </p-galleria>
+
+      <p-galleria
+        [value]="imagesOficinaMascaro"
+        [(visible)]="showOficinaMascaro"
+        [responsiveOptions]="responsiveOptions"
+        [containerStyle]="{ 'max-width': '50%' }"
+        [numVisible]="9"
+        [circular]="true"
+        [fullScreen]="true"
+        [showItemNavigators]="true"
+      >
+        <ng-template pTemplate="item" let-item>
+          <img [src]="item.itemImageSrc" style="width: 100%; display: block" />
+        </ng-template>
+        <ng-template pTemplate="thumbnail" let-item>
+          <div class="grid grid-nogutter justify-content-center">
+            <img [src]="item.thumbnailImageSrc" style="display: block" />
+          </div>
+        </ng-template>
+      </p-galleria>
+      <p-galleria
+        [value]="imagesVillas"
+        [(visible)]="showVillas"
+        [responsiveOptions]="responsiveOptions"
+        [containerStyle]="{ 'max-width': '50%' }"
+        [numVisible]="9"
+        [circular]="true"
+        [fullScreen]="true"
+        [showItemNavigators]="true"
+      >
+        <ng-template pTemplate="item" let-item>
+          <img [src]="item.itemImageSrc" style="width: 100%; display: block" />
+        </ng-template>
+        <ng-template pTemplate="thumbnail" let-item>
+          <div class="grid grid-nogutter justify-content-center">
+            <img [src]="item.thumbnailImageSrc" style="display: block" />
+          </div>
+        </ng-template>
+      </p-galleria>
+      <p-galleria
+        [value]="imagesOficinaSampol"
+        [(visible)]="showOficinaSampol"
         [responsiveOptions]="responsiveOptions"
         [containerStyle]="{ 'max-width': '50%' }"
         [numVisible]="9"

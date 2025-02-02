@@ -5,20 +5,20 @@ export class OceanDrive {
     getData() {
         return [
             {
-                itemImageSrc: 'https://primefaces.org/cdn/primeng/images/galleria/galleria1.jpg',
-                thumbnailImageSrc: 'https://primefaces.org/cdn/primeng/images/galleria/galleria1s.jpg',
+            itemImageSrc: 'images/ocean_drive/DSC06800.jpg',
+                thumbnailImageSrc: 'images/ocean_drive/DSC06800 (Thumbnail).jpg',
                 alt: 'Description for Image 1',
                 title: 'Title 1'
             },
             {
-                itemImageSrc: 'https://primefaces.org/cdn/primeng/images/galleria/galleria2.jpg',
-                thumbnailImageSrc: 'https://primefaces.org/cdn/primeng/images/galleria/galleria2s.jpg',
+                itemImageSrc: 'images/ocean_drive/DSC06808.jpg',
+                thumbnailImageSrc: 'images/ocean_drive/DSC06808 (Thumbnail).jpg',
                 alt: 'Description for Image 2',
                 title: 'Title 2'
             },
             {
-                itemImageSrc: 'https://primefaces.org/cdn/primeng/images/galleria/galleria3.jpg',
-                thumbnailImageSrc: 'https://primefaces.org/cdn/primeng/images/galleria/galleria3s.jpg',
+                itemImageSrc: 'images/ocean_drive/DSC06817.jpg',
+                thumbnailImageSrc: 'images/ocean_drive/DSC06817 (Thumbnail).jpg',
                 alt: 'Description for Image 3',
                 title: 'Title 3'
             },

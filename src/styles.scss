@@ -4,7 +4,7 @@
 @import "primeng/resources/primeng.css";
 
 body {
-    font-family: Poppins;
+    font-family: Poppins !important;
 }
 
 a {
@@ -74,7 +74,7 @@ p {
     color: currentColor;
 }
 
-.carousel-item img {
+.videoinicio video {
     max-height: 20rem !important;
     object-fit:cover;
 }
@@ -137,6 +137,10 @@ p {
     max-height: 20rem;
     object-fit: cover;
     border-radius: 20px;
+}
+
+.descripcionpr {
+    font-weight: bold;
 }
 
 @media screen and (max-width: 600px) {
