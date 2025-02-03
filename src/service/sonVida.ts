@@ -5,20 +5,20 @@ export class sonVida {
     getData() {
         return [
             {
-                itemImageSrc: 'https://primefaces.org/cdn/primeng/images/galleria/galleria1.jpg',
-                thumbnailImageSrc: 'https://primefaces.org/cdn/primeng/images/galleria/galleria1s.jpg',
+                itemImageSrc: 'images/son_vida/sonvida1.png',
+                thumbnailImageSrc: 'images/son_vida/sonvida1 (Thumbnail).png',
                 alt: 'Description for Image 1',
                 title: 'Title 1'
             },
             {
-                itemImageSrc: 'https://primefaces.org/cdn/primeng/images/galleria/galleria2.jpg',
-                thumbnailImageSrc: 'https://primefaces.org/cdn/primeng/images/galleria/galleria2s.jpg',
+                itemImageSrc: 'images/son_vida/sonvida2.png',
+                thumbnailImageSrc: 'images/son_vida/sonvida2 (Thumbnail).png',
                 alt: 'Description for Image 2',
                 title: 'Title 2'
             },
             {
-                itemImageSrc: 'https://primefaces.org/cdn/primeng/images/galleria/galleria3.jpg',
-                thumbnailImageSrc: 'https://primefaces.org/cdn/primeng/images/galleria/galleria3s.jpg',
+                itemImageSrc: 'images/son_vida/sonvida3.png',
+                thumbnailImageSrc: 'images/son_vida/sonvida3 (Thumbnail).png',
                 alt: 'Description for Image 3',
                 title: 'Title 3'
             },
