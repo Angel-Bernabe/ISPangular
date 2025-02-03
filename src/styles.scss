@@ -107,7 +107,7 @@ p {
     color: black;
 } 
 
-#servicios div img:hover {
+#servicios img:hover {
     transform: scale(1.03);
     transition: transform .2s;
 }
@@ -141,7 +141,24 @@ p {
 
 .descripcionpr {
     font-weight: bold;
+    font-size: medium;
+    padding: 5px;
 }
+
+.contenedorcontexto {
+    position: relative;
+    text-align: center;
+}
+.centered {
+    border-radius: 10px;
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 0%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+  }
+  
 
 @media screen and (max-width: 600px) {
     .headerimg img {
@@ -187,6 +204,9 @@ p {
     .imgtintado {
         width: 100%;
     } 
+    .descripcionpr {
+        font-size: smaller;
+    }
 }
 /* Importing Bootstrap SCSS file. */
 @import 'bootstrap/scss/bootstrap';
