@@ -3,7 +3,7 @@
     background-image: linear-gradient(to bottom, rgb(255, 255, 255), rgba(var(--bs-tertiary-bg-rgb)));
 }
 .proyecto img {
-    max-width: 15rem;
+    max-width: 100%;
     border-radius: 10px;
 }
 .container {
@@ -19,8 +19,8 @@
 }
 
 #servicio img {
-    width: 15rem;
-    height: 15rem;
+    width: 25rem;
+    height: 20rem;
     object-fit: cover;
 }
 

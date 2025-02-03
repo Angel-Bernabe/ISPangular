@@ -17,12 +17,6 @@ export class SixSenses {
                 title: 'Title 2'
             },
             {
-                itemImageSrc: 'images/six_senses/IMG_7999.jpg',
-                thumbnailImageSrc: 'images/six_senses/IMG_7999 (Thumbnail).jpg',
-                alt: 'Description for Image 3',
-                title: 'Title 3'
-            },
-            {
                 itemImageSrc: 'images/six_senses/sixsenses1.jpg',
                 thumbnailImageSrc: 'images/six_senses/sixsenses1 (Thumbnail).jpg',
                 alt: 'Description for Image 3',
