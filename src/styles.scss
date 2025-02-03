@@ -158,9 +158,23 @@ p {
     transform: translate(-50%, -50%);
     background-color: white;
   }
+  .acordeones {
+    display: none;
+  }
   
 
 @media screen and (max-width: 600px) {
+    .bodycontent {
+        display: none;
+    }
+    .acordeones {
+        display: initial;
+    }
+    .acordeones h2 {
+        font-size: large;
+        font-weight: bold;
+    }
+
     .headerimg img {
         display: block;
         margin-left: auto;
