@@ -20,8 +20,17 @@
             Instalamos <b>láminas de protección solar</b> que proporcionan una
             mejora de las propiedades de los acristalamientos existentes,
             solucionar los problemas solares por exceso de calor y/o de luz y
-            mejorar la <b>eficiencia energética</b>.
+            mejorar la <b>eficiencia energética</b>.<button
+            type="button"
+            class="btn btn-link botonmas"
+            (click)="collapse.toggle()"
+            [attr.aria-expanded]="!isCollapsed"
+            aria-controls="collapseExample"
+          >
+          Continua Leyendo!
+          </button>
           </p>
+          <div #collapse="ngbCollapse" [(ngbCollapse)]="isCollapsed">
           <p>
             Disponemos de un gran catalogo de <b>láminas de control solar</b>,
             que tras una evaluación del proyecto a realizar, podremos
@@ -33,6 +42,7 @@
             sin necesidad de obras y realizada por profesionales certificados.
           </p>
           <p>Solicita información sin compromiso.</p>
+        </div>
         </div>
       </div>
     </div>
@@ -47,15 +57,24 @@
             radiaciones infrarrojas y devolverlas al exterior antes de que
             traspase completamente el vidrio y se conviertan en calor,
             mejorando considerablemente la eficiencia energética en los
-            edificios. Reducen el consumo energético desde el primer día
+            edificios.<button
+            type="button"
+            class="btn btn-link botonmas"
+            (click)="collapse1.toggle()"
+            [attr.aria-expanded]="!isCollapsed1"
+            aria-controls="collapseExample"
+          >Continua Leyendo!
+          </button> 
+          </p>
+          <div #collapse1="ngbCollapse" [(ngbCollapse)]="isCollapsed1">
+          <p>Reducen el consumo energético desde el primer día
             mejorando el clima y rechazando hasta el 90% de la radiación
             solar. Las láminas para edificios de protección solar y seguridad
             rechazan la energía solar causante del calor, reducen
             drásticamente la ganancia calórica de los acristalamientos. En
             función de los materiales utilizados en su composición y
             fabricación obtenemos un producto con un acabado estético y unas
-            prestaciones totalmente diferentes.
-          </p>
+            prestaciones totalmente diferentes.</p>
           <p>
             Las láminas de seguridad proporcionan al vidrio las excepcionales
             cualidades del poliéster laminado frente al impacto: flexibilidad,
@@ -72,6 +91,7 @@
             energética.
           </p>
         </div>
+        </div>
       </div>
     </div>
     <div class="container text-left py-6">
@@ -82,8 +102,16 @@
             Somos una empresa dedicada a la instalación de láminas de
             protección solar con más de 20 años de experiencia en el sector,
             trabajamos y estamos certificados con los mejores fabricantes en
-            láminas solares del mercado, 3M, Avery dennison y llumar.
+            láminas solares del mercado, 3M, Avery dennison y llumar.<button
+            type="button"
+            class="btn btn-link botonmas"
+            (click)="collapse2.toggle()"
+            [attr.aria-expanded]="!isCollapsed2"
+            aria-controls="collapseExample"
+          >Continua Leyendo!
+          </button> 
           </p>
+          <div #collapse2="ngbCollapse" [(ngbCollapse)]="isCollapsed2">
           <p>
             Ofrecemos el mejor estudio, asesoramiento e instalación de láminas
             de protección solar por técnicos altamente cualificados. Reducen
@@ -93,103 +121,19 @@
           </p>
         </div>
       </div>
+      </div>
     </div>
   </div>
 
-  <div class="container acordeones">
-    <div ngbAccordion>
-  <div ngbAccordionItem>
-    <h2 ngbAccordionHeader>
-      <button ngbAccordionButton><h2>Que Hacemos?</h2></button>
-    </h2>
-    <div ngbAccordionCollapse>
-      <div ngbAccordionBody>
-        <ng-template><p>
-          Instalamos <b>láminas de protección solar</b> que proporcionan una
-          mejora de las propiedades de los acristalamientos existentes,
-          solucionar los problemas solares por exceso de calor y/o de luz y
-          mejorar la <b>eficiencia energética</b>.
-        </p>
-        <p>
-          Disponemos de un gran catalogo de <b>láminas de control solar</b>,
-          que tras una evaluación del proyecto a realizar, podremos
-          asesorarle con la opción que mas se ajuste a sus necesidades.
-        </p>
-        <p>
-          Consigue la protección que necesitas sin necesidad de remplazar
-          los cristales existentes con una instalación económica, rápida,
-          sin necesidad de obras y realizada por profesionales certificados.
-        </p>
-        <p>Solicita información sin compromiso.</p></ng-template>
-      </div>
-    </div>
-  </div>
-</div>
-<div ngbAccordion>
-  <div ngbAccordionItem>
-    <h2 ngbAccordionHeader>
-      <button ngbAccordionButton><h2>¿Como funcionan las láminas de protección solar?</h2></button>
-    </h2>
-    <div ngbAccordionCollapse>
-      <div ngbAccordionBody>
-        <ng-template><p>
-          Con una lámina de control solar, es posible reflejar las
-          radiaciones infrarrojas y devolverlas al exterior antes de que
-          traspase completamente el vidrio y se conviertan en calor,
-          mejorando considerablemente la eficiencia energética en los
-          edificios. Reducen el consumo energético desde el primer día
-          mejorando el clima y rechazando hasta el 90% de la radiación
-          solar. Las láminas para edificios de protección solar y seguridad
-          rechazan la energía solar causante del calor, reducen
-          drásticamente la ganancia calórica de los acristalamientos. En
-          función de los materiales utilizados en su composición y
-          fabricación obtenemos un producto con un acabado estético y unas
-          prestaciones totalmente diferentes.
-        </p>
-        <p>
-          Las láminas de seguridad proporcionan al vidrio las excepcionales
-          cualidades del poliéster laminado frente al impacto: flexibilidad,
-          elasticidad, resistencia, impidiendo ser proyectado el vidrio
-          desfragmentado.
-        </p>
-        <p>
-          Las laminas solares profesionales están fabricadas en poliéster de
-          calidad óptica altamente nítido y cristalino, sin distorsionar la
-          vista una vez instalado por nuestros profesionales. Las láminas
-          Solares que instalamos son diseñadas para proporcionar un confort
-          térmico óptimo, mejorar la estética y la seguridad, dotar de
-          privacidad a los edificios y contribuir a la eficiencia
-          energética.
-        </p></ng-template>
-      </div>
-    </div>
-  </div>
-</div>
-<div ngbAccordion>
-  <div ngbAccordionItem>
-    <h2 ngbAccordionHeader>
-      <button ngbAccordionButton><h2>¿Porque elegir ISP Control solar?</h2></button>
-    </h2>
-    <div ngbAccordionCollapse>
-      <div ngbAccordionBody>
-        <ng-template><p>
-          Somos una empresa dedicada a la instalación de láminas de
-          protección solar con más de 20 años de experiencia en el sector,
-          trabajamos y estamos certificados con los mejores fabricantes en
-          láminas solares del mercado, 3M, Avery dennison y llumar.
-        </p>
-        <p>
-          Ofrecemos el mejor estudio, asesoramiento e instalación de láminas
-          de protección solar por técnicos altamente cualificados. Reducen
-          el consumo energetico desde el primer dia mejorando el clima
-          rechazando hasta el 90% de la radiación solar. Nos diferencia la
-          PROFESIONALIDAD, CALIDAD Y RESULTADO.
-        </p></ng-template>
-      </div>
-    </div>
-  </div>
-</div>
-  </div>
+  
+  <!-- <details open>
+    <summary>Este elemento se va a mostrar siempre abierto al cargar la web, aunque podemos cerrarlo haciendo clic en él</summary>
+    <p>Y este es el texto que, como tenemos el atributo open en nuestra etiqueta details, siempre vamos a ver al recargar la web.</p>
+</details>
+<details>
+    <summary>Este elemento se va a mostrar siempre cerrado al recargar la web, y no se abrirá hasta que hagamos clic en él</summary>
+    <p>Este es el texto oculto que se muestra al desplegarse.</p>
+</details> -->
 
   <div id="servicios" class="container-fluid text-center">
     <div class="row">

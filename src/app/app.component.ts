@@ -6,13 +6,14 @@ import { HomeComponent } from "./home/home.component";
 import { IconsModule } from './icons/icons.module';
 import { NgbCarouselModule } from '@ng-bootstrap/ng-bootstrap';
 import { NgbAccordionModule } from '@ng-bootstrap/ng-bootstrap';
+import { NgbCollapseModule } from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
     selector: 'app-root',
     standalone: true,
     templateUrl: './app.component.html',
     styleUrl: './app.component.scss',
-    imports: [RouterOutlet, HeaderComponent, FooterComponent, HomeComponent, IconsModule, NgbCarouselModule, NgbAccordionModule]
+    imports: [RouterOutlet, HeaderComponent, FooterComponent, HomeComponent, IconsModule, NgbCarouselModule, NgbAccordionModule, NgbCollapseModule]
 })
 export class AppComponent {
   title = 'Angular-bootstrap';

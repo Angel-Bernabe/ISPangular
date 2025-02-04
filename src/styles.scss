@@ -157,15 +157,11 @@ p {
     transform: translate(-50%, -50%);
     background-image: linear-gradient(to bottom, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.5));
   }
-  .acordeones {
-    display: none;
-  }
-  
 
 @media screen and (max-width: 600px) {
-    .bodycontent {
-        display: none;
-    }
+    // .bodycontent {
+    //     display: none;
+    // }
     .acordeones {
         display: initial;
     }
